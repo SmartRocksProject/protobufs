@@ -10,6 +10,7 @@ option swift_prefix = "";
 
 import "meshtastic/channel.proto";
 import "meshtastic/config.proto";
+import "meshtastic/device_metadata.proto";
 import "meshtastic/mesh.proto";
 import "meshtastic/module_config.proto";
 import "meshtastic/connection_status.proto";
@@ -256,7 +257,7 @@ message AdminMessage {
     int32 reboot_ota_seconds = 95;
 
     /*
-     * This message is only supported for the simulator Portduino build.
+     * This message is only supported for the simulator porduino build.
      * If received the simulator will exit successfully.
      */
     bool exit_simulator = 96;
@@ -303,9 +304,4 @@ message HamParameters {
    * Ensure your radio is capable of operating of the selected frequency before setting this.
    */
   float frequency = 3;
-
-  /*
-   * Optional short name of user
-   */
-  string short_name = 4;
 }

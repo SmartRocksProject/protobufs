@@ -39,12 +39,12 @@ message WifiConnectionStatus {
   NetworkConnectionStatus status = 1;
 
   /*
-   * WiFi access point SSID 
+   * WiFi access point ssid 
    */
   string ssid = 2;
 
   /*
-   * RSSI of wireless connection
+   * Rssi of wireless connection
    */
   int32 rssi = 3;
 }
@@ -89,12 +89,12 @@ message NetworkConnectionStatus {
  */
 message BluetoothConnectionStatus {
   /*
-   * The pairing PIN for bluetooth
+   * The pairing pin for bluetooth
    */
   uint32 pin = 1;
 
   /*
-   * RSSI of bluetooth connection
+   * Rssi of bluetooth connection
    */
   int32 rssi = 2;
 
@@ -109,7 +109,7 @@ message BluetoothConnectionStatus {
  */
  message SerialConnectionStatus {
   /*
-   * Serial baud rate
+   * The serial baud rate
    */
   uint32 baud = 1;
 
