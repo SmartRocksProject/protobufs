@@ -141,6 +141,11 @@ enum PortNum {
    * a certain destination would take on the mesh.
    */
   TRACEROUTE_APP = 70;
+  
+  /*
+   * Logs notification when human activity is detected nearby.
+   */
+  ACTIVITY_MONITOR_APP = 71;
 
   /*
    * Private applications should use portnums >= 256.
