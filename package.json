@@ -1,0 +1,17 @@
+{
+    "name": "meshtastic-protobufs",
+    "version": "1.0.0",
+    "description": "A package containing Protocol Buffers for meshtastic.",
+    "main": "generated/index.js",
+    "scripts": {
+        "build": "mkdir -p generated && grpc_tools_node_protoc --js_out=import_style=commonjs,binary:generated --grpc_out=generated --proto_path=. meshtastic/*.proto && node generate-index.js",
+        "postinstall": "npm run build"
+    },
+    "dependencies": {
+        "google-protobuf": "^3.x.x",
+        "@grpc/grpc-js": "^1.x.x"
+    },
+    "devDependencies": {
+        "grpc-tools": "^1.x.x"
+    }
+}
